@@ -1,34 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-get_ipython().system('pip install autocorrect')
-
-
-# In[2]:
-
-
 from autocorrect import Speller
 
-
-# In[3]:
-
-
 spell = Speller(lang='en')
-
-
-# In[4]:
-
 
 def autocorrect_text(input_text):
     corrected_text = spell(input_text)
     return corrected_text
-
-
-# In[ ]:
-
 
 # Create an interactive loop
 while True:
